@@ -1,0 +1,157 @@
+[gd_scene load_steps=10 format=3 uid="uid://dnmp4vab4si5t"]
+
+[ext_resource type="Script" path="res://ParallaxLayer.gd" id="1_f0lg0"]
+[ext_resource type="Texture2D" uid="uid://csi8mwd6axwoa" path="res://assets/parallax/parallax-00.png" id="1_un0re"]
+[ext_resource type="Texture2D" uid="uid://cyivd2hhvm3m4" path="res://assets/parallax/parallax-01.png" id="2_kixbe"]
+[ext_resource type="Script" path="res://Awan.gd" id="3_daiag"]
+[ext_resource type="Texture2D" uid="uid://cffa7txswvsa1" path="res://assets/parallax/parallax-02.png" id="3_dembb"]
+[ext_resource type="Texture2D" uid="uid://d0067rbmfge4x" path="res://assets/parallax/parallax-03.png" id="4_i84rj"]
+[ext_resource type="Texture2D" uid="uid://dlnmocru8ylcn" path="res://assets/parallax/parallax-04.png" id="5_jonw1"]
+[ext_resource type="Script" path="res://Rumbuk.gd" id="6_515th"]
+[ext_resource type="Script" path="res://Alas.gd" id="8_lunaa"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="background" type="ParallaxLayer" parent="."]
+script = ExtResource("1_f0lg0")
+
+[node name="Sprite2D" type="Sprite2D" parent="background"]
+position = Vector2(581, 338)
+scale = Vector2(0.804167, 1.85)
+texture = ExtResource("1_un0re")
+
+[node name="Sprite2D" type="Sprite2D" parent="background/Sprite2D"]
+position = Vector2(-2771.81, 20.5405)
+scale = Vector2(2.63093, 1.00008)
+texture = ExtResource("1_un0re")
+
+[node name="Sprite2D" type="Sprite2D" parent="background/Sprite2D/Sprite2D"]
+position = Vector2(3219.25, -19.4579)
+scale = Vector2(2.63102, 0.996917)
+texture = ExtResource("1_un0re")
+
+[node name="Awan" type="ParallaxLayer" parent="."]
+script = ExtResource("3_daiag")
+
+[node name="Sprite2D" type="Sprite2D" parent="Awan"]
+position = Vector2(575.25, 100)
+scale = Vector2(0.799653, 0.644445)
+texture = ExtResource("2_kixbe")
+
+[node name="Gunung" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Gunung"]
+position = Vector2(576, 311.75)
+scale = Vector2(0.798611, 0.990278)
+texture = ExtResource("3_dembb")
+
+[node name="Sprite2D" type="Sprite2D" parent="Gunung/Sprite2D"]
+position = Vector2(-1303.51, 6.31137)
+scale = Vector2(0.798611, 0.990278)
+texture = ExtResource("3_dembb")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Gunung/Sprite2D"]
+position = Vector2(2182.54, 35.5961)
+scale = Vector2(0.798611, 0.990278)
+texture = ExtResource("3_dembb")
+
+[node name="Sprite2D" type="Sprite2D" parent="Gunung/Sprite2D/Sprite2D2"]
+position = Vector2(-1303.51, 6.31137)
+scale = Vector2(0.798611, 0.990278)
+texture = ExtResource("3_dembb")
+
+[node name="Rumbuk" type="ParallaxLayer" parent="."]
+script = ExtResource("6_515th")
+
+[node name="Sprite2D" type="Sprite2D" parent="Rumbuk"]
+position = Vector2(580, 382.5)
+scale = Vector2(0.802083, 0.858333)
+texture = ExtResource("4_i84rj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Rumbuk/Sprite2D"]
+position = Vector2(-1306.6, 50.6796)
+scale = Vector2(0.802083, 0.858333)
+texture = ExtResource("4_i84rj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Rumbuk/Sprite2D"]
+position = Vector2(2216.73, -0.58255)
+scale = Vector2(0.802083, 0.858333)
+texture = ExtResource("4_i84rj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Rumbuk/Sprite2D/Sprite2D2"]
+position = Vector2(-1306.6, 50.6796)
+scale = Vector2(0.802083, 0.858333)
+texture = ExtResource("4_i84rj")
+
+[node name="Sprite2D" type="Sprite2D" parent="Rumbuk/Sprite2D/Sprite2D2/Sprite2D"]
+position = Vector2(3102.57, -27.1468)
+scale = Vector2(0.802083, 0.858333)
+texture = ExtResource("4_i84rj")
+
+[node name="Alas" type="ParallaxLayer" parent="."]
+script = ExtResource("8_lunaa")
+
+[node name="Sprite2D" type="Sprite2D" parent="Alas"]
+position = Vector2(580.484, 422)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Alas/Sprite2D"]
+position = Vector2(1294.32, 8.25702)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D"]
+position = Vector2(-3086.13, 5.32642)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D"]
+position = Vector2(1294.32, 8.25702)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D/Sprite2D2"]
+position = Vector2(-3086.13, 5.32642)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D/Sprite2D2"]
+position = Vector2(1294.32, 8.25702)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D/Sprite2D2/Sprite2D2"]
+position = Vector2(-3086.13, 5.32642)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D/Sprite2D2/Sprite2D2"]
+position = Vector2(1294.32, 8.25702)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D/Sprite2D2/Sprite2D2/Sprite2D2"]
+position = Vector2(-3086.13, 5.32642)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D/Sprite2D2/Sprite2D2/Sprite2D2"]
+position = Vector2(1294.32, 8.25702)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D/Sprite2D2/Sprite2D2/Sprite2D2/Sprite2D2"]
+position = Vector2(-3086.13, 5.32642)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D/Sprite2D2/Sprite2D2/Sprite2D2/Sprite2D2"]
+position = Vector2(1294.32, 8.25702)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Alas/Sprite2D/Sprite2D/Sprite2D2/Sprite2D2/Sprite2D2/Sprite2D2/Sprite2D2"]
+position = Vector2(-3086.13, 5.32642)
+scale = Vector2(0.806228, 0.968872)
+texture = ExtResource("5_jonw1")

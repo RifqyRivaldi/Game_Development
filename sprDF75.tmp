@@ -1,0 +1,97 @@
+[gd_scene load_steps=12 format=3 uid="uid://cr8bwwdxtexsp"]
+
+[ext_resource type="Script" path="res://animated_2d.gd" id="1_8thuu"]
+[ext_resource type="Texture2D" uid="uid://ck7jxitfw7737" path="res://assets/Wolf/Run right/__Wolf_Run_000.png" id="3_1x8ec"]
+[ext_resource type="Texture2D" uid="uid://bfl7mfir5lud5" path="res://assets/Wolf/Run right/__Wolf_Run_001.png" id="4_ak3hi"]
+[ext_resource type="Texture2D" uid="uid://baocs5ukpgjea" path="res://assets/Wolf/Run right/__Wolf_Run_002.png" id="5_jvlrx"]
+[ext_resource type="Texture2D" uid="uid://c641wlveo8i" path="res://assets/Wolf/Run right/__Wolf_Run_003.png" id="6_weusc"]
+[ext_resource type="Texture2D" uid="uid://ci2mfpcww37r5" path="res://assets/Wolf/Run right/__Wolf_Run_004.png" id="7_rxfkc"]
+[ext_resource type="Texture2D" uid="uid://bla2k2svbqvij" path="res://assets/Wolf/Run right/__Wolf_Run_005.png" id="8_fdd7m"]
+[ext_resource type="Texture2D" uid="uid://dt3ahcvdkkdlu" path="res://assets/Wolf/Run right/__Wolf_Run_006.png" id="9_jwljb"]
+[ext_resource type="Texture2D" uid="uid://dfk2nbvs5iw3a" path="res://assets/Wolf/Run right/__Wolf_Run_007.png" id="10_uad2e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gfq4a"]
+resource_name = "Kanan"
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1x8ec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ak3hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jvlrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_weusc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rxfkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fdd7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jwljb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uad2e")
+}],
+"loop": true,
+"name": &"Kanan",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1x8ec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ak3hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jvlrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_weusc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rxfkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fdd7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jwljb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uad2e")
+}],
+"loop": true,
+"name": &"Kiri",
+"speed": 16.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nswpp"]
+size = Vector2(57.6571, 31.1869)
+
+[node name="Sprite2D" type="CharacterBody2D"]
+position = Vector2(1090, 220)
+scale = Vector2(1.06918, 1.01483)
+script = ExtResource("1_8thuu")
+metadata/_edit_vertical_guides_ = []
+metadata/_edit_horizontal_guides_ = [469360.0]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 2
+position = Vector2(-926.602, 330.842)
+scale = Vector2(-0.161889, 0.113327)
+sprite_frames = SubResource("SpriteFrames_gfq4a")
+animation = &"Kiri"
+frame_progress = 0.322881
+offset = Vector2(26.7299, 28.4084)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-932.49, 348.827)
+scale = Vector2(1.23709, 0.986952)
+shape = SubResource("RectangleShape2D_nswpp")

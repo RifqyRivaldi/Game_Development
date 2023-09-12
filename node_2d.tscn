@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://day14k1g7vw6s"]
+
+[ext_resource type="PackedScene" uid="uid://dc1anjtyd63yu" path="res://static_body_2d.tscn" id="1_b1d08"]
+[ext_resource type="PackedScene" uid="uid://cr8bwwdxtexsp" path="res://sprite_2d.tscn" id="2_tga1v"]
+[ext_resource type="PackedScene" uid="uid://dnmp4vab4si5t" path="res://parallax_background.tscn" id="3_lm5d7"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(62, -162)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_b1d08")]
+position = Vector2(167, 702)
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("3_lm5d7")]
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_tga1v")]
+position = Vector2(1030, 314)
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+position = Vector2(-469.519, 170.472)
+scale = Vector2(0.935296, 0.985387)
